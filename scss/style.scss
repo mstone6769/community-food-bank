@@ -80,7 +80,7 @@ a {
   color: $green;
   text-decoration: none;
   &:hover, &:focus {
-    color: $light-blue;
+    color: $orange;
   }
 }
 
@@ -502,7 +502,7 @@ input[type="submit"],
       @extend %header-font;
       line-height: 1;
       &:hover, &:focus {
-        color: $red;
+        color: $orange;
       }
     }
     
@@ -623,7 +623,7 @@ input[type="submit"],
     > li {
       &:hover, &:focus {
         > a:not(.button), a:after {
-          color: $red;
+          color: $orange;
         }
         > .dropdown {
           display: block;
@@ -706,7 +706,7 @@ input[type="submit"],
   > li > a:not(.button) {
     color: $green;
     &:hover, &:focus {
-      color: $red;
+      color: $orange;
     }
   }
 }
@@ -745,7 +745,7 @@ input[type="submit"],
   }
   &:hover, &:focus {
     &:after {
-      color: $red;
+      color: $orange;
     }
   }
 }
