@@ -21,15 +21,21 @@ $header-font-weight: 400;
 
 
 // Brand Colors
-$blue: #111580;
-$light-blue: #7c81b8;
-$red: #ff230b;
-$gold: #ff9600;
+
+$green: #7AC143;
+$orange: #FBB034;
+
+$blue: #2269A2;
+$light-blue: #169DD8;
+$red: #D31245;
+$gold: #FFD457;
+
+$dark-green: #476A1D;
 
 // secondary colors
-$dark-blue: #000064;
-$dark-red: #b41428;
-$dark-gold: #f57814;
+$dark-blue: darken($blue, 10%);
+$dark-red: darken($red, 10%);
+$dark-gold: $orange;
 
 // Grays
 $dark-gray: #363636;
