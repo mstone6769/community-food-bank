@@ -77,10 +77,10 @@ body {
 
 
 a {
-  color: $green;
+  color: $blue;
   text-decoration: none;
   &:hover, &:focus {
-    color: $orange;
+    color: $light-blue;
   }
 }
 
@@ -240,8 +240,8 @@ input[type="submit"],
   transition: background-color 100ms linear, border-color 100ms linear;
   &:hover, &:focus {
     color: $white;
-    background-color: $light-blue;
-    border-color: $light-blue;
+    background-color: $orange;
+    border-color: $orange;
   }
   
 }
@@ -502,7 +502,7 @@ input[type="submit"],
       @extend %header-font;
       line-height: 1;
       &:hover, &:focus {
-        color: $orange;
+        //color: $orange;
       }
     }
     
@@ -623,7 +623,7 @@ input[type="submit"],
     > li {
       &:hover, &:focus {
         > a:not(.button), a:after {
-          color: $orange;
+          //color: $green;
         }
         > .dropdown {
           display: block;
@@ -704,9 +704,9 @@ input[type="submit"],
 .site-nav-secondary,
 .site-header-social-links {
   > li > a:not(.button) {
-    color: $green;
+    //color: $green;
     &:hover, &:focus {
-      color: $orange;
+    //  color: $orange;
     }
   }
 }
@@ -770,7 +770,7 @@ input[type="submit"],
   @media (min-width: 800px) {
     min-height: 720px;
   }
-  background-image: url('http://s3.amazonaws.com/stone67/united-way/images/pic8b.jpg');
+  background-image: url('../images/pic1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -899,8 +899,8 @@ input[type="submit"],
     > .widget-icon {
       display: block;
       position: relative;
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
       margin: 1rem auto;
       transition: transform 200ms ease;
       > svg {
@@ -1031,15 +1031,15 @@ input[type="submit"],
 }
 
 .icon-give {
+  fill: $green;
+}
+
+.icon-get-involved {
   fill: $light-blue;
 }
 
-.icon-advocate {
-  fill: $gold;
-}
-
-.icon-impact {
-  stroke: $red;
+.icon-find-food {
+  fill: $orange;
 }
 
 .icon-menu {
