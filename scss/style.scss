@@ -925,6 +925,33 @@ input[type="submit"],
   }
 }
 
+.home-featured + .home-top .wrap {
+    background-color: #fff;
+    border-radius: 3px;
+    border-top: 3px solid #e44a3c;
+    margin-top: -40px;
+}
+
+.home-top .wrap {
+    padding: 80px;
+    position: relative;
+    z-index: 99;
+}
+
+.home-top .widget_text {
+    color: #78a7c8;
+    font-size: 48px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.home-top .widget_text .widget-title {
+    color: #e44a3c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
 .site-inner {
   padding-top: 4rem;
   @media (max-width: 799px) {
