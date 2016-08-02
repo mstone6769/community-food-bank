@@ -62,8 +62,8 @@ body {
   background-attachment: fixed;
 }
 
-.page-education {
-  background-image: url("/images/backgrounds/education.jpg");
+.page-standard {
+  background-image: url("/images/backgrounds/standard.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -756,6 +756,9 @@ input[type="submit"],
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  > .wrap {
+    position: relative;
+  }
 }
 
 .slide-excerpt {
@@ -860,6 +863,22 @@ input[type="submit"],
     padding-right: 1rem;
     float: left;
     text-align: center;
+  }
+}
+
+.feeding-america-logo {
+  position: absolute;
+  display: block;
+  background: url('../images/feeding-america-color.png') no-repeat;
+  background-size: 100%;
+  text-indent: -3000px;
+  top: 10px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  @media (min-width: 800px) {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -999,15 +1018,15 @@ input[type="submit"],
   }
 
   > .widget-1 {
-    border-left-color: $red;
-  }
-
-  > .widget-2 {
     border-left-color: $light-blue;
   }
 
+  > .widget-2 {
+    border-left-color: $green;
+  }
+
   > .widget-3 {
-    border-left-color: $gold;
+    border-left-color: $orange;
   }
 
   .entry-link.entry-small {
@@ -1020,6 +1039,15 @@ input[type="submit"],
   p {
     margin: 0 0 1rem 0;
   }
+}
+
+.sidebar>.widget-3.search-widget {
+  background-color: $gold;
+}
+
+.search-widget .search-control {
+  padding: 10px;
+  height: 36px;
 }
 
 

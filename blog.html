@@ -4,13 +4,12 @@
     <main class="site-main">
       <div class="site-inner">
         <div class="wrap">
-          <div class="row row-reverse-desktop">
+          <div class="row">
             <section class="two-thirds">
-              <h2 class="screen-reader-text">News &amp; Events</h2>
-              <article class="entry entry-pic-left">
+              <article class="entry">
                 <figure class="entry-image">
                   <a href="entry.html">
-                    <img src="http://s3.amazonaws.com/stone67/united-way/images/pic1.jpg" alt="">
+                    <img src="images/news1.jpg" alt="">
                   </a>
                 </figure>
                 <div class="entry-content">
@@ -25,10 +24,10 @@
                     salutandi an pri.</p>
                 </div>
               </article>
-              <article class="entry entry-pic-left">
+              <article class="entry">
                 <figure class="entry-image">
                   <a href="entry.html">
-                    <img src="http://s3.amazonaws.com/stone67/united-way/images/pic2.jpg" alt="">
+                    <img src="images/news2.jpg" alt="">
                   </a>
                 </figure>
                 <div class="entry-content">
@@ -43,10 +42,10 @@
                     salutandi an pri.</p>
                 </div>
               </article>
-              <article class="entry entry-pic-left">
+              <article class="entry">
                 <figure class="entry-image">
                   <a href="entry.html">
-                    <img src="http://s3.amazonaws.com/stone67/united-way/images/pic9.jpg" alt="">
+                    <img src="images/news3.jpg" alt="">
                   </a>
                 </figure>
                 <div class="entry-content">
@@ -63,32 +62,41 @@
               </article>
             </section>
             <aside class="one-third sidebar">
-              <section class="widget widget-3">
-                <h2 class="widget-title">Recent Posts</h2>
+              <section class="widget widget-1">
+                <h2 class="widget-title">Categories</h2>
                 <ul>
                   <li>
-                    <a href="">Sample Post With Threaded Comments</a>
-                    </li>
+                    <a href="">Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Aligned Left</a>
-                    </li>
+                    <a href="">Very Long Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Aligned Right</a>
-                    </li>
+                    <a href="">Short Cat</a>
+                  </li>
+                   <li>
+                    <a href="">Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Centered</a>
-                    </li>
+                    <a href="">Very Long Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With an Unordered List</a>
-                    </li>
-                  <li>
-                    <a href="">Sample Post With an Ordered List</a>
-                    </li>
-                  <li>
-                    <a href="">Sample Post With a Blockquote</a>
-                    </li>
+                    <a href="">Short Cat</a>
+                  </li>
                 </ul>
               </section>
+              <section class="widget widget-3 search-widget">
+                <h2 class="widget-title screen-reader-text">Search</h2>
+                <form>
+                  <input
+                    aria-label="Search"
+                    placeholder="Search"
+                    class="search-control" 
+                    type="search">
+                  <button class="sr-only" type="submit">Search</button>
+                </form>
+              </section>
+              @@include('./includes/event-widget.html')
             </aside>
           </div>
         </div>
