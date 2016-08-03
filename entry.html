@@ -1,22 +1,22 @@
 @@include('./includes/header.html', {
-    "bodyClass": "page-entry",
-    "title": "Blog Entry"})
+    "bodyClass": "page-blog",
+    "title": "Blog"})
     <main class="site-main">
       <div class="site-inner">
         <div class="wrap">
-          <div class="row row-reverse-desktop">
-            <div class="two-thirds">
+          <div class="row">
+            <section class="two-thirds">
               <article class="entry">
-                
+                <figure class="entry-image">
+                  <a href="entry.html">
+                    <img src="images/news1.jpg" alt="">
+                  </a>
+                </figure>
                 <div class="entry-content">
                   <div class="entry-meta">
                     <time class="entry-time" datetime="2014-02-01T01:57:18+00:00">February 1, 2016</time>
                   </div>
-                  <h1 class="entry-title"><a href="">Recent Headline</a></h1>
-
-                  <figure class="alignright entry-image">
-                    <img src="http://s3.amazonaws.com/stone67/united-way/images/pic1.jpg" alt="">
-                  </figure>
+                  <h1 class="entry-title"><a href="entry.html">Recent Headline</a></h1>
                   <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin tempor sapien, non tristique nunc dignissim pellentesque. Etiam dolor tellus, ornare et pretium vel, viverra non est. Aenean condimentum purus quis mauris rutrum dapibus. Nunc suscipit nibh in purus porttitor lobortis. Vestibulum quis leo non tellus mollis vehicula aliquam et eros. Morbi sagittis scelerisque iaculis. Morbi condimentum faucibus rutrum. Aenean fringilla, ligula nec volutpat euismod, enim lorem porttitor lacus, in tristique magna lacus vitae lacus. Curabitur et orci eu velit cursus rhoncus. Aliquam ut nibh eget purus venenatis consequat sit amet id justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor et odio eget euismod. Nulla suscipit nisl orci, vel eleifend nunc fringilla sed. Nam posuere imperdiet nisi, eget consectetur odio malesuada ut. Aliquam at neque posuere, lacinia justo quis, imperdiet purus. Nunc placerat mattis tristique.
                   </p>
@@ -34,38 +34,47 @@
                   </p>
                 </div>
               </article>
-              
-            </div>
+            </section>
             <aside class="one-third sidebar">
-              <section class="widget widget-3">
-                <h2 class="widget-title">Recent Posts</h2>
+              <section class="widget widget-1">
+                <h2 class="widget-title">Categories</h2>
                 <ul>
                   <li>
-                    <a href="">Sample Post With Threaded Comments</a>
-                    </li>
+                    <a href="">Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Aligned Left</a>
-                    </li>
+                    <a href="">Very Long Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Aligned Right</a>
-                    </li>
+                    <a href="">Short Cat</a>
+                  </li>
+                   <li>
+                    <a href="">Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With Image Centered</a>
-                    </li>
+                    <a href="">Very Long Blog Category</a>
+                  </li>
                   <li>
-                    <a href="">Sample Post With an Unordered List</a>
-                    </li>
-                  <li>
-                    <a href="">Sample Post With an Ordered List</a>
-                    </li>
-                  <li>
-                    <a href="">Sample Post With a Blockquote</a>
-                    </li>
+                    <a href="">Short Cat</a>
+                  </li>
                 </ul>
               </section>
+              <section class="widget widget-3 search-widget">
+                <h2 class="widget-title screen-reader-text">Search</h2>
+                <form>
+                  <input
+                    aria-label="Search"
+                    placeholder="Search"
+                    class="search-control" 
+                    type="search">
+                  <button class="sr-only" type="submit">Search</button>
+                </form>
+              </section>
+              @@include('./includes/event-widget.html')
             </aside>
           </div>
         </div>
       </div>
     </main>
 @@include('./includes/footer.html')
+
