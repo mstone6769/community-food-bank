@@ -380,6 +380,14 @@ input[type="submit"],
   @media (max-width: (799px)) {
     left: 1rem;
   }
+  @media (min-width: $site-menu-breakpoint) {
+    max-width: 200px;
+
+  }
+  @media (min-width: ($site-menu-breakpoint + 200px)) {
+    top: 1.5rem;
+    max-width: 220px;
+  }
 }
 
 /* Site Footer
@@ -652,7 +660,7 @@ input[type="submit"],
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: darken($white, 5%);
+  background-color: $dark-orange;
   min-width: 10rem;
   width: 100%;
   text-align: center;
@@ -664,14 +672,14 @@ input[type="submit"],
   > li {
     padding: 0;
     &:not(:last-child) {
-      border-bottom: 1px solid rgba($black, 0.1);
+      border-bottom: 1px solid rgba($white, 0.25);
     }
     > a {
       display: block;
       padding: 0.5em 0.5em 0.5em 0.5em;
-      color: $blue;
+      color: $white;
       &:hover, &:focus {
-        background-color: $dark-orange;
+        background-color: $orange;
         color: $white;
       }
     }
